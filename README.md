@@ -32,7 +32,7 @@ This example DLL demonstrates the required structure:
 
 To use WinHookInjector, follow these steps:
 
-1. **Download the Injector**: Get the latest release from [GitHub Actions Artifact](https://github.com/uh0101/WinHookInjector/actions).
+1. **Download the Injector**: Get the latest build from [GitHub Actions Artifact](https://github.com/uh0101/WinHookInjector/actions) (You can also get it from releases but it's probably outdated).
 
 2. **Inject DLL into a Process**:
    ```
