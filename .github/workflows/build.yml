@@ -1,0 +1,33 @@
+name: build-WinHookInjector
+on:
+  push:
+    paths:
+    - 'WinHookInjector/**'
+    - 'Example/**'
+  pull_request:
+    paths:
+    - 'WinHookInjector/**'
+    - 'Example/**'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up MSVC environment
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Build WinHookInjector & Example
+        run: |
+          msbuild WinHookInjector/WinHookInjector.vcxproj /p:Configuration=Release /p:Platform="x64"
+          msbuild Example/Example.vcxproj /p:Configuration=Release /p:Platform="x64"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: WinHookInjector
+          path: |
+            WinHookInjector/build/WinHookInjector.exe
+            Example/build/Example.dll
