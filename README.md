@@ -61,13 +61,13 @@ DLL injection can pose risks if used improperly:
 
 Contributions to WinHookInjector are welcome! Here's how you can contribute:
 
-- Submit bug reports or feature requests through GitHub Issues.
-- Fork the repository, make improvements, and submit pull requests for review.
+- Submit bug reports or feature requests through [GitHub Issues](https://github.com/uh0101/WinHookInjector/issues).
+- Fork the repository, make improvements, and submit [pull requests](https://github.com/uh0101/WinHookInjector/pulls) for review.
 - Follow coding standards and ensure compatibility across different environments.
 
 ## License
 
-WinHookInjector is licensed under the MIT License. See LICENSE file for details.
+WinHookInjector is licensed under the MIT License. See [LICENSE file](https://github.com/uh0101/WinHookInjector/blob/main/LICENSE) for details.
 
 ## Troubleshooting
 
