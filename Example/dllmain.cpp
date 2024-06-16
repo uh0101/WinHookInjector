@@ -11,6 +11,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved) {
 	return TRUE;
 }
 
-extern "C" __declspec(dllexport) int NextHook(int code, WPARAM wParam, LPARAM lParam) {
+extern "C" __declspec(dllexport) LRESULT NextHook(int code, WPARAM wParam, LPARAM lParam) {
 	return CallNextHookEx(NULL, code, wParam, lParam);
 }
